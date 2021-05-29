@@ -12,6 +12,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <Counter addValue={1} />
+        <Greet name="Vaishak" heroName="SuperMan" />
+        <Welcome  name="Vaishak" heroName="SuperMan" />
+        <FunctionalClick />
+        <ClassClick />
+        <EventBind />
         <ParentComponent />
       </div>
     );

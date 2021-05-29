@@ -7,7 +7,7 @@ export class ClassClick extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.clickHandler}>Click</button>
+        <button onClick={this.clickHandler}>Class Click Handler</button>
       </div>
     );
   }
