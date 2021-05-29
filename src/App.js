@@ -1,12 +1,12 @@
 import "./App.css";
 import { Component } from "react";
-import Message from "./components/Message";
+import Counter from "./components/Counter";
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <Message />
+        <Counter addValue={10} />
       </div>
     );
   }
