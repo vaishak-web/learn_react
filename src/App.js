@@ -1,4 +1,3 @@
-import logo from './logo.svg';
 import './App.css';
 import {Greet} from './components/Greet';
 import Welcome from './components/Welcome';
@@ -8,9 +7,9 @@ import PropsE from './components/PropsE';
 function App() {
   return (
     <div className="App">
-      {/* <Greet />
-      <Welcome /> */}
-      {/* <Hello /> */}
+      <Greet />
+      <Welcome />
+      <Hello />
       <PropsE name="Vaishak" heroName="apple">
         <p>This is children block</p>
       </PropsE>
