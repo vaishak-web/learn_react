@@ -2,6 +2,7 @@ import React from "react";
 import Person from "./Person";
 
 function NameList() {
+  const serial = ["Bruce", "Clark", "Drake", "Rock"];
   const names = [
     {
       id: 1,
@@ -28,12 +29,11 @@ function NameList() {
       address: "rashin",
     },
   ];
-  const nameList = names.map((n) => (
-    <Person name = {n} key={n.id} />
-  ));
+  const nameList = names.map((n) => <Person name={n} key={n.id} />);
+const s = serial.map((n, index) => <h1 key={index}>{index}</h1>);
   return (
     <div>
-      <div>{nameList}</div>
+      <div>{s}</div>
     </div>
   );
 }
