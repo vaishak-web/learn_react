@@ -20,7 +20,7 @@ class App extends Component {
       <div className="App">
         <h1 className="error">Error</h1>
         <h1 className={styles.error}>Error</h1>
-        {/* <Stylesheet primary={true}/> */}
+        <Stylesheet primary={true}/>
         <Inline/>
         <Counter addValue={1} />
         <Greet name="Vaishak" heroName="SuperMan" />
