@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import ChildComponent from './ChildComponent'
+import MemoComp from './MemoComp'
 
 
 class ParentComponent extends Component {
@@ -7,19 +7,23 @@ class ParentComponent extends Component {
         super(props)
     
         this.state = {
-             parentName: "Parent"
+             name: "Vaishak"
         }
-        this.greetParent = this.greetParent.bind(this)
     }
     
-    greetParent(childName){
-        alert(`Hello ${this.state.parentName} from ${childName}`)
+    componentDidMount(){
+        setInterval(() =>{
+            this.setState({
+                name: 'Vaishak'
+            })
+        }, 2000)
     }
-
     render() {
+        console.log('*****************************Parent Comp Render ***************************')
         return (
             <div>
-                <ChildComponent greetHandler={this.greetParent}/>
+                Parent Component
+                <MemoComp name={this.state.name}/>
             </div>
         )
     }
