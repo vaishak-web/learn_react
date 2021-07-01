@@ -1,12 +1,17 @@
-import './App.css';
-import PortalDemo from './components/PortalDemo';
+import "./App.css";
+import { Component } from "react";
+import ClicCounter from "./components/ClicCounter";
+import HoverCounter from "./components/HoverCounter";
 
-function App() {
-  return (
-    <div className="App">
-      <PortalDemo />
-    </div>
-  );
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+        <ClicCounter />
+        <HoverCounter />
+      </div>
+    );
+  }
 }
 
 export default App;
