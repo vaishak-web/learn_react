@@ -7,8 +7,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <br />
         <ClicCounter />
         <HoverCounter />
+        <p>Click Counter & Hover Counter using same counter functionality</p>
       </div>
     );
   }

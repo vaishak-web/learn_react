@@ -12,4 +12,4 @@ class ClicCounter extends Component {
   }
 }
 
-export default withCounter(ClicCounter);
+export default withCounter(ClicCounter, 5);
